@@ -30,7 +30,7 @@ class Produit
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $couleur;
+    private $color;
 
     /**
      * @ORM\Column(type="string", length=10)
@@ -106,14 +106,14 @@ class Produit
         return $this;
     }
 
-    public function getCouleur(): ?string
+    public function getcolor(): ?string
     {
-        return $this->couleur;
+        return $this->color;
     }
 
-    public function setCouleur(string $couleur): self
+    public function setcolor(string $color): self
     {
-        $this->couleur = $couleur;
+        $this->color = $color;
 
         return $this;
     }
